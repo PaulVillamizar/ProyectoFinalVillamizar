@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* variables inicia*/
+
+$color-principal: rgb(157, 207, 157);
+$color-letra: #000;
+$tamaño-letra: 28px;
+/*variables fin*/
+
+/*barra inicia*/
+
+.navbar {
+    height: 120px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+
+    .navbar-brand img {
+        height: 100px;
+    }
+
+    .navbar-toggler {
+        background-color: $color-principal !important;
+    }
+
+    .nav-link {
+        color: $color-letra !important;
+        font-size: 22px;
+    }
+}
+
+.nav-link:hover {
+    color: $color-principal !important;
+    border-right: 3px solid $color-principal;
+}
+
+/*barra fin*/
+/*contenido pag home inicia*/
+
+.jumbotron {
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-color: $color-principal;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    .contenido-main {
+        width: 400px;
+        text-align: center;
+    }
+
+    .eslogan {
+        color: $color-letra;
+    }
+
+    .border {
+        background-color: $color-principal;
+        box-shadow: 0 0 5px $color-letra ;
+        padding: 5px;
+        border-radius: 50px;
+    }
+}
+
+.credit-card {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 50px;
+}
+
+.titulo-producto {
+    color: $color-letra;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: $color-principal;
+}
+
+.productos {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 20px;
+
+    .producto {
+        width: 80%;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid $color-principal;
+        border-radius: 5px;
+        transition: 1s;
+    }
+
+    .producto:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 14px;
+        color: $color-letra;
+    }
+
+    button {
+        color: $color-letra;
+        border: solid 1px $color-principal;
+        background-color: #fff;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: $color-principal
+    }
+}
+
+.enlace {
+    padding: 40px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $color-letra;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .btn{
+        border-radius: 10px;
+    }
+}
+
+.btn:hover{
+    background-color: $color-principal;
+}
+
+/*contenido pag home fin*/
+/*formulario pag contacto inicia*/
+
+.contacto-info {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.contacto-item {
+    list-style: none;
+
+    .contacto-link {
+        text-decoration: none;
+        color: $color-letra;
+        cursor: pointer;
+    }
+}
+
+.contacto-link:hover {
+    color: $color-principal;
+}
+
+.contacto-item-icon {
+    letter-spacing: 10px;
+}
+
+/*formulario pag contacto fin*/
+/*Nosotros pag inicia*/
+
+.img-cocinero {
+    background-image: url(../img/Entrega-de-pedidos.jpg);
+    height: 500px;
+    width: 600px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Nosotros pag fin*/
+/*footer inicia*/
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+
+    .info{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    i {
+        font-size: 22px;
+        padding: 20px;
+        letter-spacing: 20px;
+        color: #fff;
+    }
+}
+
+/*footer fin*/
+
+@media only screen and (min-width:0) and (max-width:767px) {
+    .navbar-collapse {
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+    }
+
+    .border {
+        height: 90px;
+        width: 200px;
+    }
+
+    .eslogan{
+        font-size: $tamaño-letra;
+        }
+    
+    .titulo-producto{
+        font-size: $tamaño-letra;
+    }
+
+    button:hover{
+        background-color: $color-principal;
+    }
+    .dropdown-menu{
+        border: none;
+    }
+}

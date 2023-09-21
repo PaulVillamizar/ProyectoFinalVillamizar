@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables inicia*/
+/*variables fin*/
+/*barra inicia*/
+.navbar {
+  height: 120px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 1px #ccc;
+}
+.navbar .navbar-brand img {
+  height: 100px;
+}
+.navbar .navbar-toggler {
+  background-color: rgb(157, 207, 157) !important;
+}
+.navbar .nav-link {
+  color: #000 !important;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: rgb(157, 207, 157) !important;
+  border-right: 3px solid rgb(157, 207, 157);
+}
+
+/*barra fin*/
+/*contenido pag home inicia*/
+.jumbotron {
+  height: 600px;
+  width: 100%;
+  background-image: url(../img/fondo.jpg);
+  background-color: rgb(157, 207, 157);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.jumbotron .contenido-main {
+  width: 400px;
+  text-align: center;
+}
+.jumbotron .eslogan {
+  color: #000;
+}
+.jumbotron .border {
+  background-color: rgb(157, 207, 157);
+  box-shadow: 0 0 5px #000;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.credit-card {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 50px;
+}
+
+.titulo-producto {
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  background-color: rgb(157, 207, 157);
+}
+
+.productos {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 20px;
+}
+.productos .producto {
+  width: 80%;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgb(157, 207, 157);
+  border-radius: 5px;
+  transition: 1s;
+}
+.productos .producto:hover {
+  transform: scale(1.1, 1.1);
+}
+.productos img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: 1s;
+}
+.productos h3 {
+  margin: 10px 0;
+}
+.productos p {
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.productos button {
+  color: #000;
+  border: solid 1px rgb(157, 207, 157);
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.productos button:hover {
+  background-color: rgb(157, 207, 157);
+}
+
+.enlace {
+  padding: 40px;
+  text-align: center;
+}
+.enlace a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+.enlace .btn {
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(157, 207, 157);
+}
+
+/*contenido pag home fin*/
+/*formulario pag contacto inicia*/
+.contacto-info {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.contacto-item {
+  list-style: none;
+}
+.contacto-item .contacto-link {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.contacto-link:hover {
+  color: rgb(157, 207, 157);
+}
+
+.contacto-item-icon {
+  letter-spacing: 10px;
+}
+
+/*formulario pag contacto fin*/
+/*Nosotros pag inicia*/
+.img-cocinero {
+  background-image: url(../img/Entrega-de-pedidos.jpg);
+  height: 500px;
+  width: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Nosotros pag fin*/
+/*footer inicia*/
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}
+footer .info {
+  text-decoration: none;
+  color: #fff;
+}
+footer i {
+  font-size: 22px;
+  padding: 20px;
+  letter-spacing: 20px;
+  color: #fff;
+}
+
+/*footer fin*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+  }
+  .border {
+    height: 90px;
+    width: 200px;
+  }
+  .eslogan {
+    font-size: 28px;
+  }
+  .titulo-producto {
+    font-size: 28px;
+  }
+  button:hover {
+    background-color: rgb(157, 207, 157);
+  }
+  .dropdown-menu {
+    border: none;
+  }
+}/*# sourceMappingURL=estilos.css.map */
